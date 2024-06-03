@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  font-family: "Roboto";
+  margin: 0;
+  padding: 0;
+  background-image: url(img/fondo.jpg);
+}
+
+header {
+  position: fixed;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0 5%;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 5%;
+}
+
+nav ul li a, footer p, a{
+  text-decoration: none;
+  color: #ffffff; /* Color de los enlaces del menú */
+}
+
+a {
+  color: #1b0091; /* Color de los enlaces de contacto */
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+main {
+  padding: 5%;
+}
+
+header,
+footer {
+  background-color: #000000; /* Color de fondo del encabezado y pie de página */
+  padding: 1%;
+}
+
+h1,
+h2,
+p {
+  text-align: center;
+  color: #000000; /* Color del texto de los títulos */
+}
+
+h1,
+h2 {
+  margin-bottom: 3%;
+}
+
+
+p {
+  text-align:left;
+}
+
+.section {
+  background-color: #eae7e7; /* Color de fondo de las secciones */
+  padding: 2%;
+  margin: 2%;
+}
+
+.contenedor_Contacto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+
+.contenedor_Principal {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+
+@media only screen and (max-width: 1119px) {
+  /* Estilos para pantallas de tablets y smartphones */
+  .contenedor_Instagram,
+  .contenedor_Youtube {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media only screen and (min-width: 1120px) {
+  /* Estilos para pantallas de escritorio y laptops */
+  .contenedor_Instagram,
+  .contenedor_Youtube {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 15px;
+  }
+}
