@@ -19,7 +19,9 @@ function redireccionar() {
         "https://www.instagram.com/p/C7WzTwOxyfm/",
         "https://www.instagram.com/p/C5xshqwt5yY/",
         "https://www.instagram.com/p/C5dbkSUta6b/", 
-        "https://www.instagram.com/p/CZCzaNSFNfX/?img_index=1"
+        "https://www.instagram.com/p/CZCzaNSFNfX/?img_index=1",
+        "https://www.youtube.com/watch?v=KxGRhd_iWuE",
+        "https://www.youtube.com/watch?v=AlLhMySQTlo"
         // Agrega más enlaces aquí según sea necesario
     ];
 
