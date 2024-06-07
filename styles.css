@@ -71,7 +71,7 @@ p {
 }
 
 .section {
-  background-color: #eae7e7; /* Color de fondo de las secciones */
+  background-color: #eae7e7;  /* Color de fondo de las secciones */
   padding: 2%;
   margin: 2%;
 }
@@ -91,19 +91,52 @@ p {
   gap: 15px;
 }
 
+.cta-button {
+  background: #0020b0;
+  padding: 1% 25%;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  border: none; /* Esta línea elimina el borde */
+  display: flex;
+}
+
+.cta-button p {
+  color: white;
+  font-size: 150%;
+  
+}
+
 @media only screen and (max-width: 1119px) {
   /* Estilos para pantallas de tablets y smartphones */
   .contenedor_Instagram,
-  .contenedor_Youtube {
+  .contenedor_Youtube,
+  .contenedor_misterio {
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 15px;
   }
+
+  .contenedor_Instagram {
+    margin-top: 5%;
+  }
+
+  .contenedor_misterio {
+    margin-bottom: 5%;
+  }
 }
 
 @media only screen and (min-width: 1120px) {
   /* Estilos para pantallas de escritorio y laptops */
+
+  .contenedor_misterio {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px; 
+    margin-bottom: 5%;
+  }
   .contenedor_Instagram,
   .contenedor_Youtube {
     display: flex;
