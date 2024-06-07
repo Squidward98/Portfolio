@@ -8,7 +8,7 @@ body {
   background-image: url(img/fondo.jpg);
 }
 
-.cartel{
+.cartel {
   font-family: "Chakra Petch", sans-serif;
   font-size: 48px;
 }
@@ -29,7 +29,10 @@ nav ul li {
   margin-right: 5%;
 }
 
-nav ul li a, footer p, footer a, a{
+nav ul li a,
+footer p,
+footer a,
+a {
   text-decoration: none;
   color: #ffffff; /* Color de los enlaces del menú */
 }
@@ -38,10 +41,9 @@ a {
   color: #1b0091; /* Color de los enlaces de contacto */
 }
 
-a:hover{
-    text-decoration: underline;
+a:hover {
+  text-decoration: underline;
 }
-
 
 main {
   padding: 5%;
@@ -65,13 +67,12 @@ h2 {
   margin-bottom: 3%;
 }
 
-
 p {
-  text-align:left;
+  text-align: left;
 }
 
 .section {
-  background-color: #eae7e7;  /* Color de fondo de las secciones */
+  background-color: #eae7e7; /* Color de fondo de las secciones */
   padding: 2%;
   margin: 2%;
 }
@@ -104,7 +105,6 @@ p {
 .cta-button p {
   color: white;
   font-size: 150%;
-  
 }
 
 @media only screen and (max-width: 1119px) {
@@ -129,14 +129,14 @@ p {
 
 @media only screen and (min-width: 1120px) {
   /* Estilos para pantallas de escritorio y laptops */
-
   .contenedor_misterio {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 15px; 
+    gap: 15px;
     margin-bottom: 5%;
   }
+
   .contenedor_Instagram,
   .contenedor_Youtube {
     display: flex;

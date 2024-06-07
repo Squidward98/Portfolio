@@ -1,6 +1,6 @@
+// Función para redirigir a un enlace aleatorio
 function redireccionar() {
-    // Lista de enlaces
-    var enlaces = [
+    const enlaces = [
         "https://squidward98.github.io/ChallengeIntegrador-CodoACodo2023/",
         "https://squidward98.github.io/elterreno.info/",
         "https://squidward98.github.io/calculadora/",
@@ -24,10 +24,11 @@ function redireccionar() {
     ];
 
     // Escoge un enlace aleatorio del array
-    var enlaceAleatorio = enlaces[Math.floor(Math.random() * enlaces.length)];
+    const enlaceAleatorio = enlaces[Math.floor(Math.random() * enlaces.length)];
 
     // Abre el enlace aleatorio en una nueva pestaña
     window.open(enlaceAleatorio, '_blank');
 }
 
+// Añade el evento al botón con id "obtenerEnlace" para ejecutar la función redireccionar al hacer clic
 document.getElementById("obtenerEnlace").addEventListener("click", redireccionar);
