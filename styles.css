@@ -2,35 +2,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 body {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
   background-image: url(img/fondo.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  max-width: 100%; /* Añadido ancho máximo */
+  margin: auto; /* Centrado del contenido */
 }
 
 .cartel {
   font-family: "Chakra Petch", sans-serif;
-  font-size: 48px;
 }
 
 header {
   position: fixed;
   width: 100%;
+  z-index: 10; /* Asegura que el header esté sobre otros elementos */
 }
 
 nav ul {
   list-style-type: none;
-  margin: 0 5%;
+  margin: 0 15%; /* Pantalla escritorio */
   padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 nav ul li {
-  display: inline;
-  margin-right: 5%;
+  text-align: center;
+  padding: 1%;
+  margin: auto; /* Pantalla escritorio */
 }
 
 nav ul li a,
-footer p,
 footer a,
 a {
   text-decoration: none;
@@ -51,45 +57,66 @@ main {
 
 header,
 footer {
-  background-color: #000000; /* Color de fondo del encabezado y pie de página */
-  padding: 1%;
+  background-color: black; /* Color de fondo del encabezado y pie de página */
+  padding: 1%; /* Pantalla escritorio */
+}
+
+footer p {
+  color: white;
+  padding-left: 3%;
+}
+
+.anuncio {
+  margin-bottom: 5%; /* Pantalla escritorio */
+}
+
+.anuncio img {
+  width: 50%;
+  margin: 0 25%; 
 }
 
 h1,
 h2,
 p {
-  text-align: center;
-  color: #000000; /* Color del texto de los títulos */
+  color: black;
 }
 
 h1,
 h2 {
   margin-bottom: 3%;
+  text-align: center;
 }
 
 p {
   text-align: left;
 }
 
-.section {
-  background-color: #eae7e7; /* Color de fondo de las secciones */
+.section,
+.section-contactos {
+  background-color: #eae7e7;
   padding: 2%;
-  margin: 2%;
+  margin: 3% 0;
+  border-radius: 8px;
 }
 
+.contenedor_misterio {
+  margin: 5% 25%;
+}
+
+.contenedor_Instagram,
+.contenedor_Radio,
+.contenedor_Youtube,
 .contenedor_Contacto {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  flex-direction: row;
   gap: 15px;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
 }
 
-.contenedor_Principal {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 15px;
+.contenedor_Radio a, 
+.contenedor_Youtube a {
+  display: none;
 }
 
 .cta-button {
@@ -97,49 +124,95 @@ p {
   padding: 1% 25%;
   text-decoration: none;
   border-radius: 5px;
-  text-align: center;
-  border: none; /* Esta línea elimina el borde */
+  border: none;
 }
 
 .cta-button p {
   color: white;
-  font-size: 150%;
+  text-align: center;
+  font-size: 1.5rem; /* Cambiado a unidades relativas */
 }
 
-@media only screen and (max-width: 1119px) {
-  /* Estilos para pantallas de tablets y smartphones */
+.section a {
+  display:none;
+}
+
+#section2 a {
+  display:block;
+  text-align: center;
+}
+
+@media only screen and (max-width: 400px) {
+  /* Estilos para pantallas de móviles */
+  .cartel {
+    margin-top: 25%;
+    font-size: 2rem; /* Cambiado a unidades relativas */
+  }
+
+  .cta-button {
+    padding: 2% 10%;
+  }
+
+  .cta-button p {
+    font-size: 1.2rem; /* Cambiado a unidades relativas */
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  main {
+    padding: 2%;
+  }
+
+  .contenedor_Radio, 
+  .contenedor_Youtube {
+    display: none;
+  }
+
+  .section a {
+    text-align: center;
+    display: block;
+  }
+
+  .contenedor_Instagram, 
+  .contenedor_misterio {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .anuncio img {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 1160px) {
+  /* Estilos para pantallas de tablets */
+  .cartel {
+    font-size: 2.25rem; /* Cambiado a unidades relativas */
+  }
+
+  .cta-button p {
+    font-size: 1.3rem; /* Cambiado a unidades relativas */
+  }
+
+  .contenedor_Radio,
   .contenedor_Instagram,
   .contenedor_Youtube,
-  .contenedor_misterio {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 15px;
+  .contenedor_misterio,
+  .contenedor_Contacto {
+    align-content: space-between;
+    flex-wrap: wrap;
   }
 
-  .contenedor_Instagram {
-    margin-top: 5%;
-  }
-
-  .contenedor_misterio {
-    margin-bottom: 5%;
-  }
-}
-
-@media only screen and (min-width: 1120px) {
-  /* Estilos para pantallas de escritorio y laptops */
-  .contenedor_misterio {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 15px;
-    margin-bottom: 5%;
-  }
-
-  .contenedor_Instagram,
-  .contenedor_Youtube {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 15px;
+  .anuncio img {
+    width: 75%;
+    margin: 0 12.5%;
   }
 }
