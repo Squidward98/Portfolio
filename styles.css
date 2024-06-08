@@ -137,7 +137,7 @@ p {
   display:none;
 }
 
-#section2 a {
+#section1 a, #section2 a {
   display:block;
   text-align: center;
 }
