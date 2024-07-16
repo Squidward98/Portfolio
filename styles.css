@@ -106,7 +106,7 @@ p {
 .contenedor_Contacto{
   display: flex;
   flex-direction: row;
-  gap: 10%;
+  gap: 15px;
   flex-wrap: nowrap;
   justify-content: space-around;
 }
