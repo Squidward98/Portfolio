@@ -4,6 +4,7 @@ function redireccionar_a() {
         "https://www.instagram.com/p/C5dbkSUta6b/",
         "https://www.youtube.com/watch?v=KxGRhd_iWuE",
         "https://www.youtube.com/watch?v=AlLhMySQTlo",
+        "https://whatsapp.com/channel/0029VaWuIIx4dTnFIZzBF72g"
         // Agrega más enlaces aquí según sea necesario
     ];
 
